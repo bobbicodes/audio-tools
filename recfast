@@ -1,3 +1,5 @@
 #!/bin/bash
 
+# use sox to record a single channel at 130% speed and truncate silences to 200ms 
+
 rec $1 remix 1 silence -l 1 0.1 1% -1 0.2 1% speed 1.3
