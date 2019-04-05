@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ffmpeg -i $1 "$1".wav
+sox "$1".wav "$1"-f.wav speed 2
+sox "$1"-f.wav "$1"-fc.wav bass -15
