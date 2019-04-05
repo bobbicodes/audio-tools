@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Processes a song for deciphering basslines when played on shitty "speakers"
+
 # Convert to wav format
 
 ffmpeg -i $1 "$1".wav
